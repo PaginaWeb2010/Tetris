@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at top, #241052, #090014 70%);
+
+    color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+
+    font-size: 45px;
+
+    margin-bottom: 25px;
+
+    color: #c77dff;
+
+    text-shadow:
+        0 0 10px #8b2cff,
+        0 0 25px #8b2cff;
+}
+
+.game {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    background: rgba(20, 10, 35, 0.95);
+
+    border: 2px solid #8b2cff;
+
+    border-radius: 20px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 0 30px rgba(139, 44, 255, 0.4);
+}
+
+canvas {
+    width: 300px;
+    height: 600px;
+
+    background: #050509;
+
+    border: 3px solid #444;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 0 20px rgba(139, 44, 255, 0.5);
+}
+
+.panel {
+    width: 200px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.box {
+    text-align: center;
+
+    background: #11101a;
+
+    border: 1px solid #444;
+
+    border-radius: 10px;
+
+    padding: 12px;
+}
+
+.box h2 {
+    font-size: 14px;
+
+    color: #aaa;
+
+    margin-bottom: 5px;
+}
+
+.box p {
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #c77dff;
+}
+
+button {
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 13px;
+
+    background: #7b2cff;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #9d4edd;
+
+    transform: scale(1.03);
+
+    box-shadow:
+        0 0 15px #7b2cff;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+.controls {
+    margin-top: 5px;
+
+    padding: 12px;
+
+    text-align: center;
+
+    background: #11101a;
+
+    border-radius: 10px;
+
+    border: 1px solid #333;
+}
+
+.controls h3 {
+    color: #c77dff;
+
+    margin-bottom: 10px;
+}
+
+.controls p {
+    color: #aaa;
+
+    font-size: 12px;
+
+    margin: 6px 0;
+}
+
+/* ========================= */
+/* CELULAR */
+/* ========================= */
+
+@media (max-width: 650px) {
+
+    body {
+        align-items: flex-start;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .game {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .panel {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+}
